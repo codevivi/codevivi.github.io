@@ -38,6 +38,8 @@ h1 {
 }
 ul {
   color: white;
+  margin-bottom: 1em;
+  padding: 1em 1em;
 }
 button {
   color: orange;
