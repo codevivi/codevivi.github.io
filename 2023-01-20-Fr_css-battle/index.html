@@ -70,6 +70,19 @@ High Score:
                             </li>
                         </ul>
                     </li>
+                    <li>Battle 116 <a href="https://cssbattle.dev/play/116">Link
+                            to
+                            battle</a>
+                        <ul>
+                            <li>
+                                <button type="button"
+                                    data-src="battle-116.html">Solution</button>
+                                <small class="score">Score: 609.18 (100% match)
+                                    (396 chars)
+                                    <em>(minified version)</em></small>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -77,6 +90,7 @@ High Score:
             const nav = document.querySelector('nav');
             const frame = document.querySelector('iframe');
             const code = document.querySelector('code');
+          
                 nav.addEventListener('click', (e)=> {
                     if(e.target.dataset.src) {
                         code.innerHTML = '';
@@ -97,7 +111,7 @@ High Score:
                     const startIndex = str.indexOf(start);
                     const endIndex = str.indexOf(end);
                     if(startIndex !== -1 && endIndex !== -1) {
-                        return str.substring(startIndex + start.length, endIndex-end.length);
+                        return str.substring(startIndex + start.length, endIndex);
                     }
                     return '';
                 }
